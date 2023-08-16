@@ -1,11 +1,19 @@
+//Ashmit
 var acc = document.getElementsByClassName("accordion");
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     this.parentElement.classList.toggle("active");
     var pannel = this.nextElementSibling;
-    if (pannel.style.display === "block") pannel.style.display = "none";
-    else pannel.style.display = "block";
+    if (pannel.style.display === "block") {
+      pannel.style.display = "none";
+      this.querySelector("i").classList.remove("fa-chevron-up");
+      this.querySelector("i").classList.add("fa-chevron-down");
+    } else {
+      pannel.style.display = "block";
+      this.querySelector("i").classList.remove("fa-chevron-down");
+      this.querySelector("i").classList.add("fa-chevron-up");
+    }
   });
 }
 
