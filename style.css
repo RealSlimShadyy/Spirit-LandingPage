@@ -757,11 +757,9 @@ body{
 }
 
 /* ADHIKANSH */
-body{
-    margin: 0;
-    background-color: black;
-}
+
 header{
+    background-color:black;
     display: flex;
     
     height: 40vh;
@@ -785,6 +783,7 @@ header{
     
 }
 .insert_top{
+     
     display: flex;
     height: 20vw;
     width: 35vw;
@@ -795,6 +794,7 @@ header{
 
 }
 .bottom{
+    background-color:black;
     height: 100vw;
     display: grid;
     grid-template-columns: 20vw 20vw 20vw;
